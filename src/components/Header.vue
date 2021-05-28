@@ -2,7 +2,7 @@
   <div class="header">
     <img @click="goBack()" src="../assets/voltar.png" alt="voltar" />
 
-    <router-link to="/newContact">
+    <router-link to="/addContacts">
       <img src="../assets/adicionar-contato.png" alt="" /> New
       Contact</router-link
     >
@@ -10,8 +10,8 @@
       <img src="../assets/contatos.png" alt="" />Contacts
     </router-link>
 
-    <router-link to="/config">
-      <img src="../assets/engrenagem.png" alt="" />Settings</router-link
+    <router-link to="/removeContact">
+      <img src="../assets/remove-user.png" alt="" />Remove Contacts</router-link
     >
 
     <img src="../assets/lupa-arredondada.png" alt="pesquisar" />

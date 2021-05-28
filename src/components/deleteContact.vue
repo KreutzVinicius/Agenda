@@ -1,5 +1,5 @@
 <template>
-  <div class="config">
+  <div class="deleteContact">
     <h1>Remover Contato</h1>
 
     <input
@@ -8,13 +8,15 @@
       @keyup.enter="removeContact"
       placeholder="id"
     />
+
+    <button @click="removeContact">Remover</button>
   </div>
 </template>
 
 <script>
 import axios from "axios";
 export default {
-  name: "config",
+  name: "deleteContact",
   data() {
     return {
       contacts: [],
@@ -40,6 +42,14 @@ export default {
 </script>
 
 <style scoped>
+.deleteContact {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  height: 30px;
+  display: block;
+}
 </style>
 
  

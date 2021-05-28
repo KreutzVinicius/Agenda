@@ -54,7 +54,7 @@ export default {
       this.pageOfItems = pageOfItems;
     },
     selectPerfil(contact) {
-      alert(contact.name);
+      alert(contact.name); //aqui é enviar a informaçao pro outro componente
     },
   },
 };
