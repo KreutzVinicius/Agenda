@@ -3,16 +3,15 @@
     <img @click="goBack()" src="../assets/voltar.png" alt="voltar" />
 
     <router-link to="/addContacts">
-      <img src="../assets/adicionar-contato.png" alt="" /> New
-      Contact</router-link
-    >
+      <img src="../assets/adicionar-contato.png" alt=""
+    /></router-link>
     <router-link to="/">
-      <img src="../assets/contatos.png" alt="" />Contacts
+      <img src="../assets/contatos.png" alt="" />
     </router-link>
 
     <router-link to="/removeContact">
-      <img src="../assets/remove-user.png" alt="" />Remove Contacts</router-link
-    >
+      <img src="../assets/remove-user.png" alt=""
+    /></router-link>
 
     <img src="../assets/lupa-arredondada.png" alt="pesquisar" />
   </div>

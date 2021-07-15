@@ -23,13 +23,15 @@ export default {
   },
   methods: {
     async addContact() {
-      const { data } = await axios.post("http://localhost:3000/contacts", {
-        id: this.id,
-        name: this.name,
-        number: this.number,
-        email: this.email,
-        avatar: this.avatar,
-      });
+      const { data } = await axios.post(
+        "https://localhost:44379/api/AgendaItems/",
+        {
+          name: this.name,
+          number: this.number,
+          email: this.email,
+          avatar: this.avatar,
+        }
+      );
 
       this.contacts = [...this.contacts, data];
       this.name = "";
@@ -37,14 +39,8 @@ export default {
       this.email = "";
       this.avatar = "";
     },
-    calculateID() {
-      this.id++;
-    },
   },
-  mounted() {
-    let id = 0;
-    this.contacts.forEach(this.calculateID(id));
-  },
+  mounted() {},
 };
 </script>
 

@@ -35,6 +35,7 @@ const customLabels = {
 
 export default {
   name: "Contacts",
+
   data() {
     return {
       contacts: [],
@@ -72,11 +73,16 @@ export default {
   padding-left: 5px;
 }
 
-img {
-  max-width: 45px;
-  max-height: 45px;
+.item img {
+  max-width: 50px;
+  max-height: 50px;
 }
 .contacts {
+  height: 100%;
   display: block;
+}
+
+.body {
+  height: calc(100% - 40px);
 }
 </style>
