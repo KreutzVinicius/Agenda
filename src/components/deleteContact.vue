@@ -28,7 +28,7 @@ export default {
   methods: {
     async removeContact() {
       const { data } = await axios.delete(
-        "https://localhost:44379/api/AgendaItems/" + this.id,
+        "https://localhost:44396/api/AgendaItems/" + this.id,
         {
           id: this.id,
         }

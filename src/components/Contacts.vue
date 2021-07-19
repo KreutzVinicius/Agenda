@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "../services/index";
 
 const customLabels = {
   first: "<<",
@@ -44,7 +44,7 @@ export default {
     };
   },
   async created() {
-    let { data } = await axios.get("http://localhost:3000/contacts");
+    let { data } = await axios.get("https://localhost:44396/api/AgendaItems/");
     this.contacts = data;
   },
   methods: {

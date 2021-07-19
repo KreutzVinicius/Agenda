@@ -24,7 +24,7 @@ export default {
   methods: {
     async addContact() {
       const { data } = await axios.post(
-        "https://localhost:44379/api/AgendaItems/",
+        "https://localhost:44396/api/AgendaItems/",
         {
           name: this.name,
           number: this.number,
